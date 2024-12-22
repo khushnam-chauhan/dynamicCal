@@ -1,0 +1,148 @@
+.calendar {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .calendar-day {
+    padding: 15px;
+    text-align: center;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .calendar-day.highlight {
+    background-color: #76b2f2;
+    color: white;
+  }
+  
+  .calendar-day.current-day {
+    background-color: #ffeb3b; /* Highlight the current day with a yellow background */
+  }
+  
+  .calendar-day .event-count {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgb(30, 251, 170);
+    color: red;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 5px;
+  }
+  
+  .empty-day {
+    background-color: #f5f5f5;
+  }
+  
+  .event-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .overlay-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .event-list {
+    width: 50%;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .event-form {
+    width: 45%;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .event-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .event-item button {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .event-item button:hover {
+    background-color: darkred;
+  }
+  
+  .event-form input,
+  .event-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .event-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(36, 36, 110);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .event-form button:hover {
+    background-color: rgb(83, 83, 131);
+  }
+  
+  .calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: #f4f4f4;
+    margin: 5px;
+  }
+  
+  .weekday {
+    padding: 5px;
+    
+  }
+  

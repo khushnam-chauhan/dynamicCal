@@ -1,0 +1,81 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px; /* Adds space around the header */
+    justify-content: space-between; /* Ensures items are spaced out evenly */
+  }
+  
+  .time-date {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 20px; /* Adds space between the items inside the time-date div */
+  }
+  
+  .digital-time {
+    margin-bottom: 10px;
+  }
+  
+  .round-clock {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(162, 162, 229);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  
+  .round-clock .water-drop {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    background-color: rgb(187, 187, 245);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: waterDrop 2s infinite;
+  }
+  
+  .date-info {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes waterDrop {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(2);
+      opacity: 0;
+    }
+  }
+  

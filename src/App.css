@@ -1,0 +1,105 @@
+body {
+  background: linear-gradient(to left, #11a6cf, rgb(241, 238, 238));
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.app {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.main-content {
+  display: flex;
+  width: 100%;
+}
+
+.right-section {
+  width: 70%;
+  flex: 2;
+  padding: 20px;
+}
+
+.left-section {
+  width: 28%;
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.upcoming-events {
+  height: 250px;
+  overflow-y: auto;
+  border: .8px solid #ddd;
+  padding: 7 0 10 10px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.upcoming-events h3 {
+  margin: 0;
+  background: linear-gradient(to right,green,white);
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 10px;
+  color: #333;
+}
+
+.event-item {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.event-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.event-item div {
+  margin-bottom: 10px;
+}
+
+.event-date {
+  font-weight: bold;
+  color: #3b8f4e;
+  font-size: 0.95em;
+}
+
+.event-name {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+}
+
+.event-item button {
+  margin-top: 15px;
+  padding: 8px 15px;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.event-item button:hover {
+  background-color: #e03e3e;
+}
+
+.events-ops{
+  background-color: white;
+  border-radius: 10px;
+  padding: 4px;
+}
